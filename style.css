@@ -497,25 +497,27 @@ background-color: #181818;
 
 @media(max-width:500px){
     #page1{
-        height: 44vh;
+        height: 67vh;
     }
     #nav{
-        top: 4%;
+        top: 3%;
         left: 28%;
     }
     #nav>h1{
         font-size: 1.8vw;
     }
     #small{
-        bottom: 45%;
+        bottom: 30%;
         height: 12vh;
         width: 10vw;
+        z-index: 9999;
     }
     #small-1{
         height: 4vh;
-        bottom: 65%;
+        bottom: 42%;
         left: 5%;
         width: 10vw;
+        z-index: 9999;
     } 
     #small-1>h1{
         font-size: 1.9vw;
@@ -532,6 +534,10 @@ background-color: #181818;
     }
     #line2{
         width: 7px;
+    }
+    #center{
+        left: -2%;
+        height: 73vh;
     }
   .carimagecontainer{
     height: 72vh;
