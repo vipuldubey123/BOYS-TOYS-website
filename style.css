@@ -1,0 +1,666 @@
+@font-face {
+    font-family: gilroy;
+    src: url();
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#main{
+    position: relative;
+}
+
+#page1{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#1B1B1B;;
+}
+#nav{
+    position: relative;
+    height: 20vh;
+    top: 8%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+#nav>h1{
+    position: relative;
+    color: white;
+    top: 17%;
+    z-index: 9;
+    font-size: .8vw;
+    font-family: gilroy;
+}
+#small{
+    position: relative;
+    bottom: 22%;
+    height: 30vh;
+    width: 6vw;
+    background-color: #E29000;
+}
+#small-1{
+    position: relative;
+    height: 10vh;
+    bottom: 43%;
+    left: 3%;
+    width: 5vw;
+    border: 1px solid white;
+}
+#small-1>h1{
+    position: relative;
+    color: white;
+    font-size: 1vw;
+    top: 17%;
+    left: 30%;
+    line-height: 1.5vw;
+    font-weight: 100;
+    font-family: gilroy;
+}
+#menu{
+    position: relative;
+    height: 11px;
+    width: 28px;
+    bottom: 48%;
+    left: 12%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+#line1{
+    position: relative;
+    left: 12%;
+    bottom: 10%;
+    background-color: #eee;
+    height: 2px;
+    width: 20px;
+    border: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#line2{
+    position: relative;
+    left: 12%;
+    bottom: 20%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    background-color: #eee;
+    height: 2px;
+    width: 14px;
+
+}
+#page1>h3{
+    position: relative;
+    color: white;
+    right: 70%;
+    top: 20%;
+    font-size: 3vw;
+    z-index: 9999999;
+}
+/* #page1>h1{
+    position: relative;
+    color: white;
+    left: 23%;
+    bottom: 30%;
+    letter-spacing: 5px;
+    z-index: 9;
+    font-size: 6vw;
+    font-family: gilroy;
+} */
+#center{
+    position: absolute;
+    width: 60vw;
+    top: 50%;
+    left: 40%;
+    /* z-index: 9999; */
+    transform: translate(0%,-50%);
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.carimagecontainer{
+    overflow: hidden;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+}
+img{
+    height: 100%;
+}
+
+
+.text{
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width:400px;
+    /* background-color: red; */
+    height: 100px;
+    z-index: 999;
+}
+.text>h1{
+    position: absolute;
+    top: 100px;
+    /* letter-spacing: 3px; */
+    font-family: gilroy;
+    font-size: 6vw;
+    color: white;
+}
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#nav1{
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    /* background-color: red; */
+    top: 10%;
+}
+#nav1>h1{
+    position: relative;
+    font-size: 2vw;
+    color: white;
+    top: 10%;
+    letter-spacing: 3px;
+    left: 5%;
+    font-family: gilroy;
+}
+#nav-part1{
+    position: relative;
+    /* background-color: red; */
+    height: 30%;
+    bottom: 5%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    left: 50%;
+}
+#nav-part1>h2{
+    position: relative;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: gilroy;
+}
+button{
+    position: absolute;
+   height: 6%;
+   width: 8%;
+    bottom: 82%;
+    left: 85%;
+    color: white;
+    border: 1px solid rgb(55, 55, 31);
+    background-color: #181818;
+}
+.img-container {
+    position: relative;
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    left: 15%;
+}
+
+.img-animate {
+    height: 0vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.img-animate1 {
+    height: 0vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+#img-div1 {
+    position: relative;
+    width: 20vw;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://imgs.search.brave.com/ElvbMlEC0kJeNvOhlwzw8XAEqVd6gOqEiBKf8_CWvqc/rs:fit:777:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4y/djJfM0UtSjVWeG1B/ZTBPWG1PX1RnSGFF/aCZwaWQ9QXBp");
+    filter: drop-shadow(1vw 1vw 1vw black);
+    border-radius: 5px;
+
+
+}
+
+#img-div2 {
+    position: relative;
+    width: 25vw;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://imgs.search.brave.com/NZqWfhpTWI5zmKJA3vJV93Ge9Ja1Zj2G6swp-efhxDc/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5f/bXRSTW5NV2hLWWlC/RnQzWTluM293SGFG/aiZwaWQ9QXBp");
+    filter: drop-shadow(1vw 1vw 1vw black);
+    border-radius: 5px;
+
+
+}
+
+
+#img-div3 {
+    position: relative;
+    width: 20vw;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://imgs.search.brave.com/NCvvtJEVkmSlFAkz4c-meHObGqjLYXblK318Joz3fQY/rs:fit:746:225:1/g:ce/aHR0cHM6Ly90c2Uz/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC5ka051SWxf/Z0ZlNDhnRGkwOE5w/VUpBSGFFdCZwaWQ9/QXBp");
+    filter: drop-shadow(1vw 1vw 1vw black);
+    border-radius: 5px;
+
+}
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+}
+
+.img-car{
+    position: relative;
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    left: 15%;
+}
+.img-left {
+    width: 0vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+
+#img-left1{
+    position: relative;
+    height: 75vh;
+    right: 23%;
+    top: 30%;
+    background-position: center;
+    background-size: cover;
+    /* width: 50vw; */
+    background-image: url("https://imgs.search.brave.com/GKFvszUc8zi7Nkt6bwUC3tQobZYJqXCiYAJvUhBcxXg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/Z2FubmV0dC1jZG4u/Y29tL3ByZXN0by8y/MDE5LzA3LzE5L1BE/VEYvN2FkYmYxMTAt/Yjk3OC00ZGZhLTgw/MDUtMjYwODk0NTRh/MWJjLUdUWV9BRlBf/MUlYMFgwLmpwZz9j/cm9wPTM0OTksMTk2/OSx4MCx5MTYyJndp/ZHRoPTMyMDAmaGVp/Z2h0PTE4MDEmZm9y/bWF0PXBqcGcmYXV0/bz13ZWJw");
+    filter: drop-shadow(1vw 1vw 1vw black);
+    border-radius: 5px;
+}
+
+#box{
+    position: relative;
+    bottom: 22%;
+    height: 30vh;
+    width: 7vw;
+    left: 50%;
+    bottom: 25%;
+    background-color: #E29000;
+}
+#page3>h1{
+    position: relative;
+    left: 53%;
+    letter-spacing: 5px;
+    color: white;
+    bottom: 50%;
+    font-size: 3vw;
+    font-family: gilroy;
+}
+#button{
+    position: absolute;
+    top:60%;
+    margin-left: -15%;
+    border:none;
+       
+    
+}
+
+#page4{
+    position: relative;
+height: 100vh;
+width: 100vw;
+transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+background-color: #181818;
+}
+.img-right-car{
+    position: relative;
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    left: 15%;
+}
+
+.img-right {
+    width: 0vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
+
+} 
+#img-right1{
+    position: relative;
+    height: 65vh;
+    /* width: 50vw; */
+    left: 55%;
+    top: 30%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+    filter: drop-shadow(1vw 1vw 1vw black);
+    border-radius: 5px;
+}
+#page4>h1{
+    position: relative;
+    color: white;
+    left: 6%;
+    bottom: 35%;
+    font-size: 3vw;
+    font-family: gilroy;
+}
+#page4>p{
+    position: relative;
+    color: white;
+    left: 6%;
+    bottom: 25%;
+    letter-spacing: 2px;
+    line-height: 1.5vw;
+    font-family: gilroy;
+    font-size: .8vw;
+}
+#box2{
+    position: relative;
+    height: 10%;
+    width: 40%;
+    left: 6%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    bottom: 10%;
+
+}
+#box2>h3{
+    color: white;
+    font-family: gilroy;
+    font-size: 1vw;
+    font-weight: 200;
+
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+}
+
+#small-2{
+    position: relative;
+    height: 15vh;
+    top: 30%;
+    left: 20%;
+    width: 7.5vw;
+    border: 1px solid white;
+}
+#small-2>h1{
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    top: 17%;
+    left: 17%;
+    line-height: 2vw;
+    font-family: gilroy;
+}
+#details{
+    position: relative;
+    height: 30vh;
+    width: 20vw;
+    /* background-color: red; */
+    left: 30%;
+    top: 15%;
+    
+}
+#details>h3{
+    position: relative;
+    color: white;
+    font-size: 1vw;
+    bottom: 9%;
+    left: 26%;
+    line-height: 3vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+#part1{
+    position: relative;
+    height: 6vh;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    left: 54%;
+    bottom: 25%;
+}
+#part1>h1{
+    position: relative;
+    left: 4%;
+    top: 15%;
+    color: white;
+    font-family: gilroy;
+    font-size:1vw;
+}
+#part2{
+    position: relative;
+    height: 6vh;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    left: 54%;
+    top: -18%;
+}
+#part2>h1{
+    position: relative;
+    left: 4%;
+    top: 15%;
+    color: white;
+    font-family: gilroy;
+    font-size:1vw;
+}
+#part3{
+    position: relative;
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid white;  
+    border-radius: 20px;
+    left: 54%;
+    bottom: 10%;
+}
+#part3>h1{
+    position: relative;
+    left: 4%;
+    top: 9%;
+    color: white;
+    font-family: gilroy;
+    font-size:1vw;
+}
+
+@media(max-width:500px){
+    #page1{
+        height: 44vh;
+    }
+    #nav{
+        top: 4%;
+        left: 28%;
+    }
+    #nav>h1{
+        font-size: 1.8vw;
+    }
+    #small{
+        bottom: 45%;
+        height: 12vh;
+        width: 10vw;
+    }
+    #small-1{
+        height: 4vh;
+        bottom: 65%;
+        left: 5%;
+        width: 10vw;
+    } 
+    #small-1>h1{
+        font-size: 1.9vw;
+        top: 23%;
+        left: 26%;
+        line-height: 2.5vw;
+    }
+    #menu{
+        bottom: 70%;
+        left: 17%;
+    }
+    #line1{
+        width: 15px;
+    }
+    #line2{
+        width: 7px;
+    }
+  .carimagecontainer{
+    height: 72vh;
+  }
+    #page1>h1{
+        left: 19%;
+        bottom: 44%;
+    }
+    #nav1>h1{
+        top: -11%;
+    letter-spacing: 3px;
+    left: 4%
+    }
+    
+#nav-part1>h2{
+    font-size: 1.5vw;
+    bottom: 39%;
+}
+button{
+    height: -8%;
+    width: 17%;
+    bottom: 90%; 
+    left: 81%;
+    font-size: 2vw;
+}
+#img-div1{
+    bottom: 28%;
+    right: 9%;
+}
+#img-div2{
+    bottom: 26%;
+    right: 5%;
+}
+#img-div3{
+    bottom: 28%;
+}
+#page2{
+    height: 80vh;
+}
+#page3{
+    height: 70vh;
+}
+#img-left1{
+    height: 50vh;
+    top: 6%;
+}
+#box{
+    height: 13vh;
+    width: 14vw;
+    left: 60%;
+    bottom: 45%;
+}
+#page3>h1{
+    left: 63%;
+    bottom: 57%;
+}
+#button{
+    margin-left: -5%;
+}
+#page4{
+    height: 70vh;
+}
+#page4>h1{
+    left: 3%;
+    bottom: 80%;
+    font-size: 4vw;
+}
+#img-right1{
+    height: 37vh;
+    left: -20%;
+    top: 22%;
+}
+#page4>p{
+    left: 4%;
+    bottom: 73%;
+    line-height: 3vw;
+    font-size: 1.8vw;
+}
+#box2{
+    bottom: 6%;
+}
+#page5{
+    height: 50vh;
+}
+#small-2{
+    height: 7vh;
+    top: 18%;
+    left: 7%;
+    width: 15.5vw;
+}
+#small-2>h1{
+    font-size: 3vw;
+    top: 17%;
+    left: 19%;
+    line-height: 4.5vw;
+}
+#details>h3{
+    font-size: 2vw;
+    bottom: 15%;
+    line-height: 4vw;
+}
+#part1{
+    height: 4vh;
+    width: 82vw;
+    left: 5%;
+    bottom: 29%;
+}
+#part1>h1{
+    font-size: 3vw;
+    top: 28%;
+}
+#part2{
+    height: 4vh;
+    width: 82vw;
+    left: 5%;
+    top: -24%;
+}
+#part2>h1{
+    font-size: 3vw;
+    top: 28%;
+}
+#part3{
+    height: 4vh;
+    width: 82vw;
+    left: 5%;
+    bottom: 17%;
+}
+#part3>h1{
+    top: 28%;
+    font-size: 3vw;
+}
+}
