@@ -83,7 +83,7 @@ function show() {
         end : "left 50%",
         scrub : true,
       },
-      width : "55vw"
+      width : "70vw"
     })
 
    
@@ -97,7 +97,7 @@ function show() {
         end : "right 50%",
         scrub : true,
       },
-      width : "55vw"
+      width : "45vw"
     })
    }
 
@@ -148,7 +148,7 @@ function show() {
         start: "top 50%",
         scrub: true,
       },
-      width: "100vw",
+      width: "150vw",
     })
   }
 
