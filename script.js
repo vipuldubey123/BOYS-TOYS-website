@@ -135,7 +135,7 @@ function show() {
         start: "top 50%",
         scrub: true,
       },
-      width: "110vw",
+      width: "200vw",
     })
   
   }
@@ -216,7 +216,7 @@ function show() {
 
   if (window.innerWidth <= 500) {
 
-    show();
+    // show();
       ImgAnimation();
     carAnimation();
     rightAnimation();
